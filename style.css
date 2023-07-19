@@ -175,7 +175,7 @@ h1 {
 }
 
 .position .tooltip:after {
-  color: #37bd50;
+  color: #539f37;
   content: "";
   position: absolute;
   bottom: -13px;
@@ -197,7 +197,7 @@ h1 {
   max-width: 100vw;
   height: 70vh;
   z-index: 1;
-  background-color: #a5b89e;
+  background-color: #539f37;
   border: 5px solid #10467c;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -219,7 +219,7 @@ h1 {
   text-align: left;
   line-height: 1.3em;
   border-radius: 10px;
-  background-color: aliceblue;
+  background-color: white;
   /* Add word-wrap property */
   word-wrap: break-word;
   overflow: auto;
