@@ -9,6 +9,7 @@ img.src = "image/oslo.jpg";
 img.style.width = "80%";
 img.style.height = "50%";
 img.style.padding = "10%";
+img.style.borderRadius = "10px";
 document.getElementById("osloIMG").appendChild(img);
 img.style.display = "none";
 
