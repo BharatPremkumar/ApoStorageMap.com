@@ -15,6 +15,35 @@ function addModule() {
 function closeModal() {
   modal.style.display = "none";
 }
+/* 
+// Add an event listener for the form submit
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const data = {
+    locationName: locationInput.value,
+  };
+
+  // Make a GET request to the Python script's endpoint with query parameters
+  fetch("http://localhost:5000/submit?" + new URLSearchParams(data))
+    .then((response) => response.json())
+    .then((result) => {
+      // Handle the response from the server here
+      console.log(result); // This will contain the data sent back from the Python script
+      // Update your HTML or display the data in any way you need
+      if (!result || result.id === undefined) {
+        pEl.style.color = "red";
+        pEl.innerHTML =
+          "The location does not exist. Please check for spelling errors.";
+      } else {
+        pEl.style.color = "#1b6613";
+        pEl.innerHTML = `The ${locationInput.value} is on track: ${result.id}`;
+      }
+    })
+    .catch((error) => {
+      console.log("Error:", error);
+    });
+}); */
 
 const locations = [
   { id: 1, name: "tåsen senter" },
@@ -88,8 +117,6 @@ form.addEventListener("submit", function (event) {
   const locationInput = document.getElementById("location");
   const locationValue = locationInput.value.toLowerCase();
   console.log(locationValue);
-
-  const foundId = findIdByLocation(locationValue);
 
   const foundId = findIdByLocation(locationValue);
   if (foundId === 55 || locationValue === 56 || locationValue === 57) {
