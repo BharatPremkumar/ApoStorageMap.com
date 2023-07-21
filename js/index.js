@@ -90,16 +90,14 @@ form.addEventListener("submit", function (event) {
   console.log(locationValue);
 
   const foundId = findIdByLocation(locationValue);
-  if (foundId !== null) {
+
+  const foundId = findIdByLocation(locationValue);
+  if (foundId === 55 || locationValue === 56 || locationValue === 57) {
+    pEl.style.color = "#1b6613";
+    pEl.innerHTML = `${locationInput.value} is track is the same location as where 190T is sorted: `;
+  } else if (foundId !== null) {
     pEl.style.color = "#1b6613";
     pEl.innerHTML = `${locationInput.value} is on track: ${foundId}`;
-  } else if (
-    locationInput === "røa" ||
-    locationInput === "ullevaal stadion" ||
-    locationInput === "vinderen"
-  ) {
-    pEl.style.color = "red";
-    pEl.innerHTML = `${locationInput.value} is track is the same location as where 190T is sorted: `;
   } else {
     pEl.style.color = "red";
     pEl.innerHTML =
