@@ -103,6 +103,4 @@ form.addEventListener("submit", function (event) {
     pEl.innerHTML =
       "Location does not exist. Please check for spelling errors.";
   }
-  
-  locationInput.innerHTML = "";
 });
