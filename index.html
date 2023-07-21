@@ -110,7 +110,7 @@
             </div>
           </div>
 
-          <div class="item" style="top: 63%; left: 23%">
+          <div class="item" style="top: 63%; left: 23%;">
             <div class="icon"></div>
             <div class="tooltip">
               <h3>Ved Robot</h3>
@@ -200,9 +200,27 @@
       <button id="close">Close</button>
     </div>
 
-    <div id="osloIMG"></div>
-    <button id="btn">View oslo locations</button>
+    <form id="myform" >
 
+      <center><label style="font-size: large;" for="location"
+        >
+      When searching drop <b>"Apotek", "Apotek 1" or "AS"</b> just the name of location</label>
+      <br>
+      <br>
+    <input
+    required
+      type="text"
+      id="location"
+      placeholder="Oslovare"
+    /></center>
+        <br>
+    <center><div class="buttons">
+      <input type="submit" id="submit" value="Submit"/>
+    </div>
+    <p style="font-size: 145%; word-wrap: break-word; text-transform: uppercase;" id="osloLocation"></p>
+  </center>
+    </form>
+    
     <footer>Kart for stabling</footer>
     <script src="js/index.js"></script>
   </body>
