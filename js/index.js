@@ -119,7 +119,7 @@ form.addEventListener("submit", function (event) {
   console.log(locationValue);
 
   const foundId = findIdByLocation(locationValue);
-  if (foundId === 55 || locationValue === 56 || locationValue === 57) {
+  if (foundId === 55 || foundId === 56 || foundId === 57) {
     pEl.style.color = "#1b6613";
     pEl.innerHTML = `${locationInput.value} is track is the same location as where 190T is sorted: `;
   } else if (foundId !== null) {
