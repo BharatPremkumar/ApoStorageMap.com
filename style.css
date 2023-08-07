@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Verdana, sans-serif;
   background-color: white;
   margin: 0;
   line-height: 1.6;
@@ -20,7 +20,7 @@ p {
 }
 
 .header {
-  background-color: #1b6613;
+  background-color: #2c8d22;
   color: #fff;
   padding: 3%;
   text-align: center;
@@ -39,9 +39,14 @@ img {
   border-radius: 10px;
 }
 
+button:active,
+#submit:active {
+  background-color: #1b6613;
+}
+
 button,
 #submit {
-  background-color: #1b6613;
+  background-color: #2c8d22;
   color: #fff;
   padding: 5%;
   border-radius: 5px;
@@ -57,6 +62,7 @@ button:active,
 }
 
 #close {
+  color: white;
   margin-left: 25%;
   position: absolute;
   top: 89%;
@@ -190,7 +196,7 @@ h1 {
 /* Style the module container */
 .module-container {
   position: fixed;
-  top: 10%;
+  top: 16%;
   left: 3%;
   /* margin: auto; */
   /* background-color: bisque; */
@@ -247,7 +253,7 @@ h1 {
 }
 
 footer {
-  background-color: #1b6613;
+  background-color: #2c8d22;
   color: #fff;
   padding: 3em;
   grid-column: 1 / -1;

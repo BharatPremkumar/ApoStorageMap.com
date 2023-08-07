@@ -86,7 +86,7 @@ const locations = [
   { id: 39, name: "hv" },
   { id: 40, name: "karlsrud" },
   { id: 41, name: "kanalveien" },
-  { id: 42, name: "linderud" },
+  { id: 42, name: "linderud senter" },
   { id: 43, name: "lillo" },
   { id: 44, name: "harbitz torg" },
   { id: 45, name: "solheim" },
