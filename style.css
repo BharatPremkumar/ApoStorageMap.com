@@ -255,3 +255,7 @@ footer {
   text-align: center;
   max-height: 200px;
 }
+
+input {
+  touch-action: manipulation;
+}
